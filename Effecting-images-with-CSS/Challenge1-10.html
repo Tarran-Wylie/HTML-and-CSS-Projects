@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    background-color: tan;
+    color: black;
+    margin:0;
+}
+
+@media screen and (max-width:
+992px) {
+    body {
+        background-color: blueviolet;
+        color: white;
+    }
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: palevioletred;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+.main {
+    padding: 16px;
+    margin-top: 30px;
+    height: 1500px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  filter: grayscale(100%);
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 25px;
+}
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+table, th, td {
+    border:1px solid black;
+    padding: 2px;
+}
+#Planets tr:nth-child(odd)
+{background-color: darkgoldenrod}
+
+#Planets tr:nth-child(even)
+{background-color:aquamarine}
+
+#Planets tr:hover {background-color: #6e1515;}
+
+#Planets th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+}
+
+.container {
+    position: relative;
+    text-align:center;
+    color:white;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+p:hover {
+    background-color: darkmagenta;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #364540;
+    color: white;
+    font: size 16px;
+    padding:16px 32px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#Contact">Contact</a>
+</div>
+
+<div class="main">
+</div>
+
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+
+<div class="container">
+    <img src="./THUMB/Thumbnail_3.jpg" alt="Red Room" style="width:50%;">
+    <div class="centered">Space at it's Finest</div>
+</div>
+
+<h2>Planets and how many Moons</h2>
+
+<table id="Planets" style="width:100%">
+    <tr>
+        <th>Planet</th>
+        <th>Number of Moons</th>
+    </tr>
+    <tr>
+        <td>Mercury</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Venus</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Earth</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>Mars</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Jupiter</td>
+        <td>79</td>
+    </tr>
+    <tr>
+        <td>Saturn</td>
+        <td>82</td>
+    </tr>
+    <tr>
+        <td>Uranus</td>
+        <td>27</td>
+    </tr>
+    <tr>
+        <td>Neptune</td>
+        <td>14</td>
+    </tr>
+    <tr>
+        <td>Pluto</td>
+        <td>5</td>
+    </tr>
+</table>
+
+<div class="row">
+    <div class="column"
+    style="background-color:yellowgreen;">
+    <h2>Column 1</h2>
+    <p>Planets with rings</p>
+    <div class="container">
+        <img src="./THUMB/Thumbnail_9.jpg"
+        style="width:100%">
+        <div class="middle">
+            <div class="text">Crazy Universe!</div>
+        </div>
+    </div>
+    </div>
+    <div class="column"
+    style="background-color:#bbb">
+    <h2>Column 2</h2>
+    <p>Planets without rings</p>
+    <div class="container">
+    <video width="320" height="240"
+    controls muted autoplay loop>
+    <source src="./THUMB/Thumbnail.mp4">
+    <div class="middle">
+        <div class="text">Wonderous lights!</div>
+    </div>
+    </div>
+</div>
+</body>
+<footer>
+    <p1>Created and coded by @Tarran_Wylie</p1>
+</footer>
+</html>
